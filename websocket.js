@@ -1,5 +1,9 @@
 const ws = require('ws');
 
+const express = require('express')
+
+const CONNECTION_URL = "mongodb+srv://test:test@cluster0.rcivy.azure.mongodb.net/?retryWrites=true&w=majority"
+
 const PORT = process.env.PORT || 5000
 
 const wss = new ws.Server({
